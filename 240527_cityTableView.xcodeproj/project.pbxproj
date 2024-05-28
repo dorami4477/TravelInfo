@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48BD2D762C06005A0096A50B /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD2D752C06005A0096A50B /* Contants.swift */; };
 		48BD7DC32C04438F001E702B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DC22C04438F001E702B /* AppDelegate.swift */; };
 		48BD7DC52C04438F001E702B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DC42C04438F001E702B /* SceneDelegate.swift */; };
 		48BD7DC72C04438F001E702B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DC62C04438F001E702B /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48BD2D752C06005A0096A50B /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		48BD7DBF2C04438F001E702B /* 240527_cityTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 240527_cityTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BD7DC22C04438F001E702B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BD7DC42C04438F001E702B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		484C5DAA2C0626A5003CF827 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48BD7DE32C045DA2001E702B /* TravelModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		484C5DAB2C0626BB003CF827 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48BD7DC62C04438F001E702B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48BD2D722C05FF980096A50B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				48BD7DDA2C044831001E702B /* ExtentionsUI.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		48BD2D732C05FFBA0096A50B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48BD7DDF2C044C47001E702B /* AdCell.swift */,
+				48BD7DE02C044C47001E702B /* AdCell.xib */,
+				48BD7DD62C044449001E702B /* CityInfoCell.swift */,
+				48BD7DD72C044449001E702B /* CityInfoCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		48BD2D742C06003D0096A50B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				48BD2D752C06005A0096A50B /* Contants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		48BD7DB62C04438F001E702B = {
 			isa = PBXGroup;
 			children = (
@@ -70,19 +115,17 @@
 		48BD7DC12C04438F001E702B /* 240527_cityTableView */ = {
 			isa = PBXGroup;
 			children = (
-				48BD7DE32C045DA2001E702B /* TravelModel.swift */,
+				484C5DAB2C0626BB003CF827 /* Controllers */,
+				484C5DAA2C0626A5003CF827 /* Models */,
+				48BD2D742C06003D0096A50B /* Helpers */,
+				48BD2D732C05FFBA0096A50B /* Cells */,
+				48BD2D722C05FF980096A50B /* Extentions */,
 				48BD7DC22C04438F001E702B /* AppDelegate.swift */,
 				48BD7DC42C04438F001E702B /* SceneDelegate.swift */,
-				48BD7DC62C04438F001E702B /* ViewController.swift */,
-				48BD7DDF2C044C47001E702B /* AdCell.swift */,
-				48BD7DE02C044C47001E702B /* AdCell.xib */,
 				48BD7DC82C04438F001E702B /* Main.storyboard */,
 				48BD7DCB2C044391001E702B /* Assets.xcassets */,
 				48BD7DCD2C044391001E702B /* LaunchScreen.storyboard */,
 				48BD7DD02C044391001E702B /* Info.plist */,
-				48BD7DD62C044449001E702B /* CityInfoCell.swift */,
-				48BD7DD72C044449001E702B /* CityInfoCell.xib */,
-				48BD7DDA2C044831001E702B /* ExtentionsUI.swift */,
 			);
 			path = 240527_cityTableView;
 			sourceTree = "<group>";
@@ -169,6 +212,7 @@
 				48BD7DE42C045DA2001E702B /* TravelModel.swift in Sources */,
 				48BD7DE12C044C47001E702B /* AdCell.swift in Sources */,
 				48BD7DC72C04438F001E702B /* ViewController.swift in Sources */,
+				48BD2D762C06005A0096A50B /* Contants.swift in Sources */,
 				48BD7DC32C04438F001E702B /* AppDelegate.swift in Sources */,
 				48BD7DD82C044449001E702B /* CityInfoCell.swift in Sources */,
 				48BD7DDB2C044831001E702B /* ExtentionsUI.swift in Sources */,
