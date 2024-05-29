@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485AB1D52C06E00A0051569E /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AB1D42C06E00A0051569E /* AdDetailViewController.swift */; };
+		485AB1D72C06E0270051569E /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485AB1D62C06E0270051569E /* SpotDetailViewController.swift */; };
 		48BD2D762C06005A0096A50B /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD2D752C06005A0096A50B /* Contants.swift */; };
 		48BD7DC32C04438F001E702B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DC22C04438F001E702B /* AppDelegate.swift */; };
 		48BD7DC52C04438F001E702B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DC42C04438F001E702B /* SceneDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		485AB1D42C06E00A0051569E /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
+		485AB1D62C06E0270051569E /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		48BD2D752C06005A0096A50B /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		48BD7DBF2C04438F001E702B /* 240527_cityTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 240527_cityTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BD7DC22C04438F001E702B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				48BD7DC62C04438F001E702B /* ViewController.swift */,
+				485AB1D62C06E0270051569E /* SpotDetailViewController.swift */,
+				485AB1D42C06E00A0051569E /* AdDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -214,7 +220,9 @@
 				48BD7DC72C04438F001E702B /* ViewController.swift in Sources */,
 				48BD2D762C06005A0096A50B /* Contants.swift in Sources */,
 				48BD7DC32C04438F001E702B /* AppDelegate.swift in Sources */,
+				485AB1D72C06E0270051569E /* SpotDetailViewController.swift in Sources */,
 				48BD7DD82C044449001E702B /* CityInfoCell.swift in Sources */,
+				485AB1D52C06E00A0051569E /* AdDetailViewController.swift in Sources */,
 				48BD7DDB2C044831001E702B /* ExtentionsUI.swift in Sources */,
 				48BD7DC52C04438F001E702B /* SceneDelegate.swift in Sources */,
 			);

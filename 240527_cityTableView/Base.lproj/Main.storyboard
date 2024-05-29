@@ -40,6 +40,36 @@
             </objects>
             <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
         </scene>
+        <!--Ad Detail View Controller-->
+        <scene sceneID="btr-uM-gOZ">
+            <objects>
+                <viewController storyboardIdentifier="AdDetailViewController" id="qE0-1X-NKB" customClass="AdDetailViewController" customModule="_40527_cityTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxO-Ch-Y1y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hkb-6N-aqR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqo-aZ-rWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="-381"/>
+        </scene>
+        <!--Spot Detail View Controller-->
+        <scene sceneID="tHz-7o-wLA">
+            <objects>
+                <viewController storyboardIdentifier="SpotDetailViewController" id="ReK-WO-Obx" customClass="SpotDetailViewController" customModule="_40527_cityTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tW-MF-wc4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UHe-qL-ULI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OQ-S5-ncz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="315"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="DL0-hz-Qoe">
             <objects>

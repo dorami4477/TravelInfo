@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: - UITableView
 extension ViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -47,12 +48,28 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
         if travelData[indexPath.row].ad{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellID.adCellIdentifier, for: indexPath) as! AdCell
             cell.adTextLabel.text = travelData[indexPath.row].title
+            cell.selectionStyle = .none
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: CellID.cityInfoCellIdentifier, for: indexPath) as! CityInfoCell
             cell.configureData(data: travelData[indexPath.row])
             cell.setGradeImage(travelData[indexPath.row].grade ?? 0)
+            cell.selectionStyle = .none
             return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if travelData[indexPath.row].ad{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "AdDetailViewController") as! AdDetailViewController
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated: true)
+            
+        }else{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SpotDetailViewController") as! SpotDetailViewController
+            vc.title = travelData[indexPath.row].title
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     

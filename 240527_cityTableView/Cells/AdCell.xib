@@ -23,8 +23,21 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KP1-AX-1nF">
+                        <rect key="frame" x="298" y="8" width="21" height="16"/>
+                        <color key="backgroundColor" red="0.89347081024622177" green="0.89347081024622177" blue="0.89347081024622177" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Ofl-rm-ZCD"/>
+                            <constraint firstAttribute="width" constant="21" id="mMV-gn-qGy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="KP1-AX-1nF" secondAttribute="trailing" constant="24" id="0FR-wj-Wh5"/>
+                    <constraint firstItem="KP1-AX-1nF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Aeo-Ze-2bf"/>
                     <constraint firstAttribute="trailing" secondItem="Qlo-lL-LpM" secondAttribute="trailing" constant="16" id="I81-P7-pm2"/>
                     <constraint firstItem="Qlo-lL-LpM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IPN-3z-xn4"/>
                     <constraint firstItem="Qlo-lL-LpM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r8G-uC-Y8j"/>
