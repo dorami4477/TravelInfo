@@ -31,9 +31,9 @@ class CityInfoCell: UITableViewCell {
     }
     
     func connfigureUI(){
-        titleLabel.setLabelUI(fontSize: 18, weight: .bold, textColor: .black)
-        subTitleLabel.setLabelUI(fontSize: 14, weight: .regular, textColor: .gray)
-        saveCountLabel.setLabelUI(fontSize: 12, weight: .regular, textColor: .lightGray)
+        titleLabel.setTextUI(fontSize: 18, weight: .bold, textColor: .black)
+        subTitleLabel.setTextUI(fontSize: 14, weight: .regular, textColor: .gray)
+        saveCountLabel.setTextUI(fontSize: 12, weight: .regular, textColor: .lightGray)
         mainImageView.contentMode = .scaleAspectFill
         mainImageView.layer.cornerRadius = 10
         mainImageView.clipsToBounds = true
@@ -44,16 +44,10 @@ class CityInfoCell: UITableViewCell {
     func configureData(data:Travel){
         titleLabel.text = data.title
         subTitleLabel.text = data.description
-        saveCountLabel.text = "(" + (data.grade?.formatted() ?? "0") + ") 저장 " + (data.save?.formatted() ?? "0")
-        setImage(imageView: mainImageView, urlString: data.travel_image)
-        
+        saveCountLabel.text = data.gradeSaveString
+        mainImageView.kf.setImage(with: data.imageUrl, placeholder: UIImage(systemName: "star"))
     }
-    
-    func setImage(imageView: UIImageView, urlString:String?){
-        guard let urlString else { return }
-        let url = URL(string: urlString)
-        imageView.kf.setImage(with: url, placeholder: UIImage(systemName: "star"))
-    }
+
     
     func setGradeImage(_ grade:Double){
         gradeImageViews.forEach { $0.tintColor = .lightGray }

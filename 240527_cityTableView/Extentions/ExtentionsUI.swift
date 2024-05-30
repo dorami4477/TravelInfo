@@ -9,7 +9,7 @@
 import UIKit
 
 extension UILabel{
-    func setLabelUI(fontSize:CGFloat, weight:UIFont.Weight,textColor:UIColor){
+    func setTextUI(fontSize:CGFloat, weight:UIFont.Weight,textColor:UIColor){
         self.font = .systemFont(ofSize: fontSize, weight: weight)
         self.textColor = textColor
     }

@@ -27,7 +27,7 @@ class AdCell: UITableViewCell {
         adTextLabel.layer.cornerRadius = 10
         adTextLabel.clipsToBounds = true
         adTextLabel.backgroundColor = adBackgroundColor.randomElement()
-        adTextLabel.setLabelUI(fontSize: 20, weight: .bold, textColor: .black)
+        adTextLabel.setTextUI(fontSize: 20, weight: .bold, textColor: .black)
         adTextLabel.textAlignment = .center
     }
 

@@ -45,12 +45,16 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if travelData[indexPath.row].ad{
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: CellID.adCellIdentifier, for: indexPath) as! AdCell
             cell.adTextLabel.text = travelData[indexPath.row].title
             cell.selectionStyle = .none
             return cell
+            
         }else{
+           
             let cell = tableView.dequeueReusableCell(withIdentifier: CellID.cityInfoCellIdentifier, for: indexPath) as! CityInfoCell
             cell.configureData(data: travelData[indexPath.row])
             cell.setGradeImage(travelData[indexPath.row].grade ?? 0)
@@ -61,6 +65,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if travelData[indexPath.row].ad{
+            
             let vc = storyboard?.instantiateViewController(withIdentifier: "AdDetailViewController") as! AdDetailViewController
             vc.data = travelData[indexPath.row]
             let nav = UINavigationController(rootViewController: vc)
@@ -68,6 +73,7 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
             present(nav, animated: true)
             
         }else{
+            
             let vc = storyboard?.instantiateViewController(withIdentifier: "SpotDetailViewController") as! SpotDetailViewController
             vc.data = travelData[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)

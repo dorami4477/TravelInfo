@@ -14,6 +14,18 @@ struct Travel{
     var save:Int?
     var like:Bool?
     let ad:Bool
+    
+    var gradeSaveString:String{
+        "(" + (grade?.formatted() ?? "0") + ") 저장 " + (save?.formatted() ?? "0")
+    }
+    
+    var imageUrl:URL?{
+        if let travel_image{
+            let url = URL(string: travel_image)
+            return url
+        }
+        return nil
+    }
 }
 
 
