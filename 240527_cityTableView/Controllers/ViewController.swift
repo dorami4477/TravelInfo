@@ -62,13 +62,14 @@ extension ViewController:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if travelData[indexPath.row].ad{
             let vc = storyboard?.instantiateViewController(withIdentifier: "AdDetailViewController") as! AdDetailViewController
+            vc.data = travelData[indexPath.row]
             let nav = UINavigationController(rootViewController: vc)
             nav.modalPresentationStyle = .fullScreen
             present(nav, animated: true)
             
         }else{
             let vc = storyboard?.instantiateViewController(withIdentifier: "SpotDetailViewController") as! SpotDetailViewController
-            vc.title = travelData[indexPath.row].title
+            vc.data = travelData[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }
