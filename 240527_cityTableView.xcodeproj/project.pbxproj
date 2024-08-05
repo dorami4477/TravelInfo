@@ -23,6 +23,9 @@
 		48BD7DE12C044C47001E702B /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DDF2C044C47001E702B /* AdCell.swift */; };
 		48BD7DE22C044C47001E702B /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48BD7DE02C044C47001E702B /* AdCell.xib */; };
 		48BD7DE42C045DA2001E702B /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BD7DE32C045DA2001E702B /* TravelModel.swift */; };
+		48E7E0782C60CA5000DBBBB0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 48E7E0772C60CA5000DBBBB0 /* RxCocoa */; };
+		48E7E07A2C60CA5000DBBBB0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 48E7E0792C60CA5000DBBBB0 /* RxSwift */; };
+		48E7E07C2C60CA7400DBBBB0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E7E07B2C60CA7400DBBBB0 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,7 @@
 		48BD7DDF2C044C47001E702B /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
 		48BD7DE02C044C47001E702B /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
 		48BD7DE32C045DA2001E702B /* TravelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		48E7E07B2C60CA7400DBBBB0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E7E07A2C60CA5000DBBBB0 /* RxSwift in Frameworks */,
+				48E7E0782C60CA5000DBBBB0 /* RxCocoa in Frameworks */,
 				48BD7DDE2C0449C2001E702B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				48BD7DC62C04438F001E702B /* ViewController.swift */,
+				48E7E07B2C60CA7400DBBBB0 /* MainViewModel.swift */,
 				485AB1D62C06E0270051569E /* SpotDetailViewController.swift */,
 				485AB1D42C06E00A0051569E /* AdDetailViewController.swift */,
 			);
@@ -154,6 +161,8 @@
 			name = 240527_cityTableView;
 			packageProductDependencies = (
 				48BD7DDD2C0449C2001E702B /* Kingfisher */,
+				48E7E0772C60CA5000DBBBB0 /* RxCocoa */,
+				48E7E0792C60CA5000DBBBB0 /* RxSwift */,
 			);
 			productName = 240527_cityTableView;
 			productReference = 48BD7DBF2C04438F001E702B /* 240527_cityTableView.app */;
@@ -185,6 +194,7 @@
 			mainGroup = 48BD7DB62C04438F001E702B;
 			packageReferences = (
 				48BD7DDC2C0449C2001E702B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				48E7E0762C60CA5000DBBBB0 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 48BD7DC02C04438F001E702B /* Products */;
 			projectDirPath = "";
@@ -225,6 +235,7 @@
 				485AB1D52C06E00A0051569E /* AdDetailViewController.swift in Sources */,
 				48BD7DDB2C044831001E702B /* ExtentionsUI.swift in Sources */,
 				48BD7DC52C04438F001E702B /* SceneDelegate.swift in Sources */,
+				48E7E07C2C60CA7400DBBBB0 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +478,14 @@
 				minimumVersion = 7.11.0;
 			};
 		};
+		48E7E0762C60CA5000DBBBB0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -474,6 +493,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 48BD7DDC2C0449C2001E702B /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		48E7E0772C60CA5000DBBBB0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48E7E0762C60CA5000DBBBB0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		48E7E0792C60CA5000DBBBB0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48E7E0762C60CA5000DBBBB0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
